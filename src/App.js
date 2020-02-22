@@ -8,9 +8,6 @@ function App() {
   const state = {
     input: ''
   }
-
-  console.log("hello world")
-
   return (
 
     <div>
