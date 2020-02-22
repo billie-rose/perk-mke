@@ -1,28 +1,47 @@
 * {
-    font-family: opendyslexic;
+  font-family: opendyslexic;
 }
 
-@font-face{
-	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-Regular.otf');
-	font-style: normal;
-	font-weight: normal;
+div.questions {
+  width: 70%;
+  padding: 15%;
+  margin: 0 auto;
+  text-align: center;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-Italic.otf');
-	font-style: italic;
-	font-weight: normal;
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-Bold.otf');
-	font-weight: bold;
-	font-style: normal;
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
-@font-face{
-	font-family: "opendyslexic";
-	src: url('../fonts/OpenDyslexic-BoldItalic.otf');
-	font-weight: bold;
-	font-style: italic;
+
+.carousel-indicators li {
+  background-color: #333 !important;
+}
+
+@font-face {
+  font-family: "opendyslexic";
+  src: url("../fonts/OpenDyslexic-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "opendyslexic";
+  src: url("../fonts/OpenDyslexic-Italic.otf");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "opendyslexic";
+  src: url("../fonts/OpenDyslexic-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opendyslexic";
+  src: url("../fonts/OpenDyslexic-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
 }
