@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './assets/styles/index.css';
 
 function App() {
 
@@ -13,11 +14,6 @@ function App() {
   return (
 
     <div>
-      {
-        ['cat', 'dog', 'bird'].map(animal => {
-          return <p>{animal}</p>;
-        })
-      }
       <input type="text" value={state.input} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
