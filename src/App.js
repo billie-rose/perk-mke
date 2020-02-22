@@ -5,16 +5,13 @@ import './assets/styles/index.css';
 
 function App() {
 
-  const state = {
-    input: ''
-  }
   return (
 
     <div>
-      <input type="text" value={state.input} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p 
+        className="questions">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
