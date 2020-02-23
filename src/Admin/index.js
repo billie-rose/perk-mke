@@ -11,7 +11,7 @@ function Admin(props) {
     <div className="admin">
       <div className="row">
         <div className="col">
-          <h1>Welcome, {props.user}</h1>
+          <h1>Welcome!</h1>
         </div>
       </div>
       {global.getChildren().map(child => {
