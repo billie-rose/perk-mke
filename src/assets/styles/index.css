@@ -12,11 +12,16 @@ strong {
 .oppo {
   font-family: opendyslexic;
 }
+
+div.oppo {
+  max-height: 800px;
+}
+
 body {
   background-color: #f1fcfc;
 }
 .oppo h1 {
-  font-size: 5.5em;
+  font-size: 4.5em;
   float: left;
   font-family: opendyslexic;
 }
@@ -29,7 +34,7 @@ body {
 .header.oppo {
   overflow: auto;
   overflow-y: hidden;
-  height: 7.75em;
+  height: 6.75em;
   justify-content: center;
   margin: auto;
   width: 100%;
@@ -97,6 +102,11 @@ body {
   display: inline-block !important;
 }
 
+.main-char-container {
+  margin: 0 auto;
+  margin-bottom: -10%;
+  margin-top: 3%;
+}
 .angry {
   max-width: 175px !important;
   max-height: 300px !important;
@@ -113,10 +123,19 @@ body {
   padding-right: 1em;
 }
 
+.main-character {
+  max-width: 275px !important;
+  max-height: 400px !important;
+}
+
 a.child,
 a.nolink {
   text-decoration: none;
   color: #333;
+}
+
+.child h4:hover {
+  color: #fe929f !important;
 }
 
 img.character {

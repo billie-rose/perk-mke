@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import thumbsup from "../assets/thumbsup.png";
 import thumbsdown from "../assets/thumbsdown.png";
-
+import { Link } from "react-router-dom";
 import neutralcat from "../assets/neutralcat.png";
 import happycat from "../assets/happycat.png";
 import sadcat from "../assets/sadcat.png";
@@ -27,8 +27,12 @@ function Oppo() {
 
   return (
     <div className="oppo">
-      <div>&lt; Back</div>
+      <Link to="/">&lt; Back</Link>
       <div className="card">
+        <div className="main-char-container">
+          <img src={neutralcat} className="main-character" />
+        </div>
+
         <Carousel interval={null}>
           <Carousel.Item>
             <div id="question1" className="questions">

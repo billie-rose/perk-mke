@@ -28,9 +28,12 @@ function Admin(props) {
               <div className="col-6">
                 <ul>
                   <Link className="child" to={`/child/${child.id}`}>
-                    <li>{`${child.firstName} ${child.lastName}`}</li>
+                    <li>
+                      <h4>{`${child.firstName} ${child.lastName}`}</h4>
+                      <Link to={`/oppo`}>Start Visit</Link>{" "}
+                    </li>
                   </Link>
-                </ul>
+                </ul>{" "}
               </div>
             </div>
           </>

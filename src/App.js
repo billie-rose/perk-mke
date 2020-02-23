@@ -9,7 +9,6 @@ function App() {
     <div className="container">
       <Switch>
         <Route exact path="/" component={Login} />
-        <Route exact path={`/child/:id`} component={Child} />
         <Route exact path="/oppo" component={Oppo} />
       </Switch>
     </div>
