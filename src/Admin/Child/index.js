@@ -15,25 +15,28 @@ Child: {
   const child = global.getChild(props.match.params.id);
   return (
     <>
-      <div className="admin container header oppo">
+      <div className="admin header oppo">
         <Link className="nolink" to="/">
           <img className="logo" src={logo} />
           <h1>Oppo</h1>
           <img className="logo" src={logo} />
         </Link>
       </div>
-      <div className="admin card container">
+      <div className="admin card container-child">
         <div className="row">
           <div className="col">
-            <h1>
+            <h1 className="child-name">
               {child.firstName} {child.lastName}
             </h1>
           </div>
         </div>
         <div className="row">
-          <div className="col">{child.dob}</div>
+          <div className="col">
+            {" "}
+            <strong>Birthdate:</strong> {child.dob}
+          </div>
         </div>
-        <div className="row">
+        <div className="row visits">
           <div className="col">
             <h2>Visits</h2>
           </div>
@@ -41,7 +44,7 @@ Child: {
         <div className="row">
           {child.visits.map(visit => (
             <>
-              <div className="col-lg-4">
+              <div className="col-lg-4 visit">
                 <div>
                   <h4>Visit #{visit.id + 1}</h4>
                 </div>

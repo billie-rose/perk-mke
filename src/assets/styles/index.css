@@ -31,6 +31,35 @@ body {
   font-family: opendyslexic;
 }
 
+h1.child-name {
+  font-family: opendyslexic;
+  margin: 15px 0px 5px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+  display: inline-block;
+  width: 500px;
+}
+
+.visits {
+  padding-top: 20px;
+}
+
+.visit {
+  padding-top: 20px;
+}
+
+.visit ul {
+  margin-left: 10;
+}
+
+.visits h2 {
+  margin: 15px 0px 5px 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+  display: inline-block;
+  width: 200px;
+}
+
 .header.oppo {
   overflow: auto;
   overflow-y: hidden;
@@ -64,6 +93,9 @@ body {
 
 .admin.container {
   max-width: 500px;
+}
+.admin.container-child {
+  padding: 3%;
 }
 
 .admin li {

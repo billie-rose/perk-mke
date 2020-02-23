@@ -10,6 +10,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Login} />
         <Route exact path="/oppo" component={Oppo} />
+        <Route exact path={`/child/:id`} component={Child} />
       </Switch>
     </div>
   );
