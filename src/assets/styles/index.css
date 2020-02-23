@@ -1,9 +1,39 @@
 .oppo {
   font-family: opendyslexic;
 }
+body {
+  background-color: #f1fcfc;
+}
+.oppo h1 {
+  font-size: 6em;
+  float: left;
+}
 
-a.child {
+.header.oppo {
+  overflow: auto;
+  overflow-y: ;
+}
+
+.admin.card {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px lightgray;
+}
+
+.logo {
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a.child,
+a.nolink {
   text-decoration: none;
+  color: #333;
 }
 
 img.character {

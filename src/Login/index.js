@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Admin from "../Admin";
+import logo from "../assets/rainbow.png";
 
 class Login extends Component {
   state = {
@@ -19,7 +20,21 @@ class Login extends Component {
   }
 
   render() {
-    if (!this.state.isAuthenticated) return <Admin user={this.state.user} />;
+    if (!this.state.isAuthenticated)
+      return (
+        <>
+          <div className="header oppo">
+            <Link className="nolink" to="/">
+              <img className="logo" src={logo} />
+              <h1>Oppo</h1>
+              <img className="logo" src={logo} />
+            </Link>
+          </div>
+          <div className="admin card container">
+            <Admin user={this.state.user} />
+          </div>
+        </>
+      );
     return (
       <div>
         <Form onSubmit={() => this.setIsAuthenticated(true)}>

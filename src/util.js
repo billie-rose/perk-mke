@@ -68,7 +68,7 @@ export function setUp() {
     {
       id: 0,
       firstName: "José",
-      lastName: "García",
+      lastName: "Sànchez",
       dob: "01/01/2010",
       character: "cat",
       visits: [
