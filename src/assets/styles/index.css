@@ -1,3 +1,14 @@
+h1 {
+  font-family: opendyslexic;
+}
+
+h2,
+h3,
+h4,
+strong {
+  font-family: Tahoma;
+}
+
 .oppo {
   font-family: opendyslexic;
 }
@@ -5,18 +16,90 @@ body {
   background-color: #f1fcfc;
 }
 .oppo h1 {
-  font-size: 6em;
+  font-size: 5.5em;
   float: left;
+  font-family: opendyslexic;
+}
+
+.admin h1 {
+  font-size: default;
+  font-family: opendyslexic;
 }
 
 .header.oppo {
   overflow: auto;
-  overflow-y: ;
+  overflow-y: hidden;
+  height: 7.75em;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
 }
 
-.admin.card {
+.color {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border-radius: 40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(241, 252, 252);
+}
+
+.color:hover {
+  opacity: 0.35;
+  cursor: pointer;
+  border-color: #cfdfe6;
+}
+
+.card {
   background-color: #fff;
   box-shadow: 1px 1px 3px lightgray;
+}
+
+.admin.container {
+  max-width: 500px;
+}
+
+.admin li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 2.25em;
+}
+
+.thumbs {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  padding: 50px 30px 0 30px;
+  max-width: 250px;
+  max-height: 170px;
+}
+
+.thumbs:hover {
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+.emotions:hover {
+  opacity: 0.35;
+  cursor: pointer;
+}
+
+.emo {
+  padding: 50px 30px 0 30px;
+}
+
+.emotions {
+  display: inline-block !important;
+}
+
+.angry {
+  max-width: 175px !important;
+  max-height: 300px !important;
 }
 
 .logo {
@@ -38,17 +121,29 @@ a.nolink {
 
 img.character {
   display: block;
-  max-width: 230px;
-  max-height: 95px;
   width: auto;
   height: auto;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.character-container {
+  margin-left: 15%;
+}
+img.character.cat,
+img.character.rodent {
+  max-width: 150px;
+  max-height: 155px;
 }
 
 div.questions {
-  width: 70%;
-  padding: 15%;
+  width: 84%;
+  padding: 15% 0 20% 0;
   margin: 0 auto;
+  margin-left: 8%;
+  margin-left: 8%;
   text-align: center;
+  font-size: 3em;
 }
 
 .carousel-control-prev-icon {

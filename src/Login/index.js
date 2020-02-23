@@ -23,7 +23,7 @@ class Login extends Component {
     if (!this.state.isAuthenticated)
       return (
         <>
-          <div className="header oppo">
+          <div className="admin container header oppo">
             <Link className="nolink" to="/">
               <img className="logo" src={logo} />
               <h1>Oppo</h1>

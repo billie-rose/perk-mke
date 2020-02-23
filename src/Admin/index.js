@@ -17,15 +17,15 @@ function Admin(props) {
       {global.getChildren().map(child => {
         return (
           <>
-            <div className="row">
-              <div className="col">
+            <div className="row child-container">
+              <div className="offset-3 col-3 character-container">
                 <img
                   alt="Persona"
-                  className="character"
+                  className={`character ${child.character}`}
                   src={global.getCharacter(child.character)}
                 />
               </div>
-              <div className="col">
+              <div className="col-6">
                 <ul>
                   <Link className="child" to={`/child/${child.id}`}>
                     <li>{`${child.firstName} ${child.lastName}`}</li>

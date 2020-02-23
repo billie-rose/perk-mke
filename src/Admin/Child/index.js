@@ -33,7 +33,7 @@ Child: {
           <>
             <div className="col-lg-4">
               <div>
-                <h3>Visit #{visit.id + 1}</h3>
+                <h4>Visit #{visit.id + 1}</h4>
               </div>
               <ul>
                 <li>{visit.datetime}</li>
