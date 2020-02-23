@@ -1,5 +1,4 @@
-import React, { useState, Component } from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -15,14 +14,12 @@ class Login extends Component {
     this.setState({ isAuthenticated });
   }
 
-  getFormControlNode() {
-    // Get the underlying <input> DOM element
-    return ReactDOM.findDOMNode(this.refs.formControl);
+  setUser(user) {
+    this.setState({ user });
   }
 
   render() {
-    if (this.state.isAuthenticated)
-      return <Admin user={this.getFormControlNode().value} />;
+    if (!this.state.isAuthenticated) return <Admin user={this.state.user} />;
     return (
       <Card className="login">
         <Form onSubmit={() => this.setIsAuthenticated(true)}>
@@ -31,6 +28,7 @@ class Login extends Component {
             <input
               type="text"
               value={this.user}
+              onChange={e => this.setUser(e.target.value)}
               className="form control input"
             />
           </Form.Group>
