@@ -2,8 +2,16 @@
   font-family: opendyslexic;
 }
 
-.admin {
-  padding: 4%;
+a.child {
+  text-decoration: none;
+}
+
+img.character {
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
 }
 
 div.questions {
@@ -11,10 +19,6 @@ div.questions {
   padding: 15%;
   margin: 0 auto;
   text-align: center;
-}
-
-.login {
-  width: 50%;
 }
 
 .carousel-control-prev-icon {

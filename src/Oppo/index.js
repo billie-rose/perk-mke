@@ -7,16 +7,24 @@ function Oppo() {
       <div>&lt; Back</div>
       <Carousel interval={null}>
         <Carousel.Item>
-          <div className="questions">What is your favorite color?</div>
+          <div id="question1" className="questions">
+            What is your favorite color?
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="questions">How are you feeling today?</div>
+          <div id="question2" className="questions">
+            How are you feeling today?
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="questions">Do you feel safe today?</div>
+          <div id="question3" className="questions">
+            Do you feel safe today?
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className="questions">Do you feel safe to talk here?</div>
+          <div id="question4" className="questions">
+            Do you feel safe to talk here?
+          </div>
         </Carousel.Item>
       </Carousel>
     </div>

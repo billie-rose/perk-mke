@@ -21,7 +21,7 @@ class Login extends Component {
   render() {
     if (!this.state.isAuthenticated) return <Admin user={this.state.user} />;
     return (
-      <Card className="login">
+      <div>
         <Form onSubmit={() => this.setIsAuthenticated(true)}>
           <Form.Group controlId="user">
             <Form.Label>User</Form.Label>
@@ -45,7 +45,7 @@ class Login extends Component {
             Submit
           </Button>
         </Form>
-      </Card>
+      </div>
     );
   }
 }

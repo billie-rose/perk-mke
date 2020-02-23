@@ -10,28 +10,56 @@ Child: {
     visits: [ {...}, {...}, {...}]
 }
 */
+  const child = global.getChild(props.match.params.id);
   return (
-    <div className="">
+    <>
       <div className="row">
-        <div className="col">{props.character}</div>
         <div className="col">
-          {props.firstName} {props.lastName}
+          <h1>
+            {child.firstName} {child.lastName}
+          </h1>
         </div>
       </div>
       <div className="row">
-        <div className="col">{props.dob}</div>
+        <div className="col">{child.dob}</div>
       </div>
       <div className="row">
         <div className="col">
-          Visits
-          <div className="row">
-            {props.visits.map(visit => (
-              <div className="col">Visit # 1</div>
-            ))}
-          </div>
+          <h2>Visits</h2>
         </div>
       </div>
-    </div>
+      <div className="row">
+        {child.visits.map(visit => (
+          <>
+            <div className="col-lg-4">
+              <div>
+                <h3>Visit #{visit.id + 1}</h3>
+              </div>
+              <ul>
+                <li>{visit.datetime}</li>
+                {visit.notes ? <li>{visit.notes}</li> : <li>N/A</li>}
+              </ul>
+              <p>
+                <strong> What is your favorite color?</strong>
+              </p>
+              <p>{visit.evaluation.answer1}</p>
+              <p>
+                <strong> How are you feeling today?</strong>
+              </p>
+              <p>{visit.evaluation.answer2}</p>
+              <p>
+                <strong> Do you feel safe today?</strong>
+              </p>
+              {visit.evaluation.answer3}
+              <p>
+                <strong> Do you feel safe to talk here?</strong>
+              </p>
+              {visit.evaluation.answer4}
+            </div>
+          </>
+        ))}
+      </div>
+    </>
   );
 }
 

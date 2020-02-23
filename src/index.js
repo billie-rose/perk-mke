@@ -1,11 +1,46 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./assets/styles/index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  getChild,
+  setChild,
+  addChild,
+  deleteChild,
+  addVisit,
+  getCharacter,
+  getEmotionsByCharacter,
+  setUp,
+  getChildren
+} from "./util";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+Storage.prototype.setObject = function(key, value) {
+  this.setItem(key, JSON.stringify(value));
+};
+
+Storage.prototype.getObject = function(key) {
+  var value = this.getItem(key);
+  return value && JSON.parse(value);
+};
+
+global.getChild = getChild;
+global.setChild = setChild;
+global.addChild = addChild;
+global.deleteChild = deleteChild;
+global.addVisit = addVisit;
+global.getCharacter = getCharacter;
+global.getEmotionsByCharacter = getEmotionsByCharacter;
+global.getChildren = getChildren;
+setUp();
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
