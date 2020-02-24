@@ -19,6 +19,14 @@ class About extends Component {
         <div className="admin card container">
           <h1 style={{ paddingTop: "10px", fontSize: "2em" }}>About</h1>
           <p>Created for the 2020 MKE Hack-a-Pipeline all womxn hackathon.</p>
+          <p>
+            <a
+              href="https://docs.google.com/presentation/d/17_r9g6byhUJKw0iLIzxO3FasQeVVtfY37Ouj20B22rM/edit?usp=sharing"
+              target="_blank"
+            >
+              Presentation (Google slides)
+            </a>
+          </p>
           <h2 style={{ fontSize: "1.25em" }}>Contributors</h2>
           <p>
             Candace McKenzie <br /> Sierra Thomas <br /> Moon Skillin <br />
