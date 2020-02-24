@@ -33,6 +33,11 @@ class Login extends Component {
           <div className="admin card container">
             <Admin user={this.state.user} />
           </div>
+          <div className="admin container">
+            <Link to="/about" style={{ float: "right" }}>
+              About Oppo
+            </Link>
+          </div>
         </>
       );
     return (

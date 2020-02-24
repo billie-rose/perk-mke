@@ -22,7 +22,10 @@ Child: {
           <img className="logo" src={logo} />
         </Link>
       </div>
+
       <div className="admin card container-child">
+        <Link to="/">&lt; Back</Link>
+
         <div className="row">
           <div className="col">
             <h1 className="child-name">
